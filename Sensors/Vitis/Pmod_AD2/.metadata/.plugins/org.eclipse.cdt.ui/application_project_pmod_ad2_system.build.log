@@ -1,0 +1,10 @@
+18:16:36 **** Incremental Build of configuration Debug for project application_project_pmod_ad2_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 63985 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/Pmod_AD2_wrapper/export/Pmod_AD2_wrapper/Pmod_AD2_wrapper.xpfm --sys_config Pmod_AD2_wrapper --bif C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2_system/Debug/system.bif --bitstream C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit --elf C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/Debug/application_project_pmod_ad2.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2/_ide/bitstream/Pmod_AD2_wrapper.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen  -image C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/Pmod_AD2/application_project_pmod_ad2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+18:16:41 Build Finished (took 5s.255ms)
+

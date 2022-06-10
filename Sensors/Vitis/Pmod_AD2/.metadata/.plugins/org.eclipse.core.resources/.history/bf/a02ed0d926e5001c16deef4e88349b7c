@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include "PmodAD2.h"
+#include "sleep.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+
+PmodAD2 myDevice;
+
+u16 conv;
+u8 channel;
+double voltage;
+double volt;
+
+int main() {
+AD2_begin(&myDevice, XPAR_PMODAD2_0_AXI_LITE_IIC_BASEADDR, AD2_IIC_ADDR);
+
+// Turn on all channels
+AD2_WriteConfig(&myDevice, AD2_DEFAULT_CONFIG);
+
+	while(1) {
+	double dig_val;
+    dig_val = AD2_ReadConv(&myDevice, &conv);
+
+    // Keep 12-bit result
+    //conv &= 0xFFF;
+
+ 	//Scale captured data such that 0x000:0xFFF => 0.0:3.3
+    voltage = (double) (conv & AD2_DATA_MASK) * 3.3 / (AD2_DATA_MASK + 1);
+
+    // Pull channel read information out of conv
+    channel = (conv & AD2_CHANNEL_MASK) >> AD2_CHANNEL_BIT;
+
+	volt = (double) conv * (3.3/4095.0);
+	double val = dig_val * (3.3/4095);
+
+	printf("Pin V%d = %.02f V \r\n", channel + 1, voltage);
+    printf("Voltage1 = %f V \r\n", volt);
+	printf("Voltage2 = %f V \r\n", val);
+	//printf("Voltage3 = %f V \r\n", val);
+	sleep(1);
+	      }
+
+
+}
+
+
+
+
+

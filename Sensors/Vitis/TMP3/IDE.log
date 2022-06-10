@@ -1,0 +1,17 @@
+15:32:06 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\luisr\Desktop\Vitis\Graduate_Project\FPGA\TMP3\temp_xsdb_launch_script.tcl
+15:32:09 INFO  : XSCT server has started successfully.
+15:32:09 INFO  : Successfully done setting XSCT server connection channel  
+15:32:09 INFO  : plnx-install-location is set to ''
+15:32:09 INFO  : Successfully done setting workspace for the tool. 
+15:32:29 INFO  : Registering command handlers for Vitis TCF services
+15:32:29 INFO  : Platform repository initialization has completed.
+15:32:29 INFO  : Successfully done query RDI_DATADIR 
+15:37:41 INFO  : Result from executing command 'getProjects': TMP3_wrapper
+15:37:41 INFO  : Result from executing command 'getPlatforms': 
+15:37:41 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:37:41 INFO  : Platform 'TMP3_wrapper' is added to custom repositories.
+15:37:53 INFO  : Platform 'TMP3_wrapper' is added to custom repositories.
+15:40:05 INFO  : Result from executing command 'getProjects': TMP3_wrapper
+15:40:05 INFO  : Result from executing command 'getPlatforms': TMP3_wrapper|C:/Users/luisr/Desktop/Vitis/Graduate_Project/FPGA/TMP3/TMP3_wrapper/export/TMP3_wrapper/TMP3_wrapper.xpfm
+15:40:05 INFO  : Checking for BSP changes to sync application flags for project 'application_project_tmp3'...
+19:00:08 INFO  : Checking for BSP changes to sync application flags for project 'application_project_tmp3'...
